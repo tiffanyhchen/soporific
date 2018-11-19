@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'Cogito Bold';
+    src: url('../assets/fonts/CogitoWeb-Bold-TRIAL.woff');
+}
+
+@font-face {
+    font-family: 'Cogito Bold Italic';
+    src: url('../assets/fonts/CogitoWeb-BoldItalic-TRIAL.woff');
+}
+
+@font-face {
+    font-family: 'Cogito Light Italic';
+    src: url('../assets/fonts/CogitoWeb-LightItalic-TRIAL.woff');
+}
+
+@font-face {
+    font-family: 'Cogito Light';
+    src: url('../assets/fonts/CogitoWeb-Light-TRIAL.woff');
+}
+
+@font-face {
+    font-family: 'Cogito';
+    src: url('../assets/fonts/CogitoWeb-Regular-TRIAL.woff');
+}
+
+@font-face {
+    font-family: 'Cogito Italic';
+    src: url('../assets/fonts/CogitoWeb-Italic-TRIAL.woff');
+}
+
+html{
+  overflow: hidden;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  height: 100%;
+  overflow: auto;
+  margin: 0;
+  width: 100%;
+}
