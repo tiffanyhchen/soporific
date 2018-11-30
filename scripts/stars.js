@@ -6,10 +6,8 @@ var darkBlue, lightBlue;
 var stars = [];
 var moon;
 
-
 function preload(){ 
   moon = loadImage("imgs/moon.png"); 
-  print("preload done");
 } 
 
 function setup() {
@@ -22,7 +20,7 @@ function setup() {
   lightBlue = color(114, 151, 255);
   setGradient(0, 0, width, height, darkBlue, lightBlue);
   setupStars();
-  image(moon, windowWidth/4, windowHeight / 3, windowWidth / 6, windowWidth / 6);
+  image(moon, windowWidth/4, windowHeight / 3, windowWidth / 5, windowWidth / 5);
 }
 
 // Set up for canvas responsiveness
@@ -32,27 +30,26 @@ function windowResized(){
 
 function draw() {
   setGradient(0, 0, width, height, darkBlue, lightBlue);
-  image(moon, windowWidth/4, windowHeight / 3, windowWidth / 6, windowWidth / 6);
+  image(moon, windowWidth/4, windowHeight / 3, windowWidth / 5, windowWidth / 5);
   drawStars();
 }
 
 function setupStars(){
-  for (var i = 0; i < 100; i++) {
+  for (var i = 0; i < 70; i++) {
     stars.push(new Star());
   }
   
-  for (var i = 0; i < 100; i++) {
+  for (var i = 0; i < 70; i++) {
     stars[i].draw();
   }
 }
 
 function drawStars(){
-  for (var i = 0; i < 100; i++) {
+  for (var i = 0; i < 70; i++) {
     stars[i].draw();
   }
   
-  print("twinkling");
-  for (var i = Math.floor(Math.random()*10) + 1; i < 100; i = i + 5) {
+  for (var i = Math.floor(Math.random()*10) + 1; i < 70; i = i + 5) {
     stars[i].twinkle();
   }
 }

@@ -64,7 +64,7 @@ function formatTime(time){
    result = result + " am";
   }
   
-  return "<span class='recommended-sleep-time'>" 
-         + result + "</span>";
+  return "<div class='recommended-sleep-time'>" 
+         + result + "</div>";
 }
 

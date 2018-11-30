@@ -103,7 +103,8 @@ nav ul li a{
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
-  transform: translateX(-50%)
+  transform: translateX(-50%);
+  text-align: center;
 }
 
 .sketch{
@@ -229,11 +230,14 @@ input[type=radio]:checked + label {
   font-size: 1em;
   text-align: center;
   margin-right: .7em;
+  margin-bottom: .7em;
   letter-spacing: 0.02em;
+  display: inline-block;
 }
 
 #times{
   margin: 2em auto;
+  display: inline-block;
 }
 
 .left{
@@ -363,7 +367,6 @@ input[type=radio]:checked + label {
   font-size: 1em;
   line-height: 1.6em;
 }
-
 
 /* The Close Button */
 .close {

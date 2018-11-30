@@ -1,0 +1,54 @@
+.action-message{
+  font-size: .8em;
+}
+
+.left, .right, #third{
+  width: 100%;
+  float: left;
+  text-align: left;
+}
+
+#what-sleep-does .content, #good-nights-rest .content,
+#sleep-cycles .content{
+  margin-top: 40%;
+}
+
+#stats .large-num{
+  font-size: 2em;
+}
+
+#stats{
+  margin: 5% auto;
+}
+
+#hour, #minute{
+  width: 70px;
+  height: 70px;
+  font-size: 2em;
+  background: url(../../imgs/down-arrow.svg) no-repeat 86% 50% rgba(255, 255, 255, 0.5);
+}
+
+.click-icon{
+    max-width: 80%;
+}
+
+.tall{
+  height: 5em;;
+}
+
+.icon-title{
+  font-size: .8em;
+}
+
+.modal{
+  padding-top: 30%;
+}
+
+.modal-content{
+  width: 70%;
+}
+
+#good-nights-rest #page-title{
+  width: 70%;
+  margin-bottom: 1em;
+}

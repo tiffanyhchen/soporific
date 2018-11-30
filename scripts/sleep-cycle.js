@@ -14,7 +14,13 @@ function preload(){
 
 
 function setup() {
-  var canvas = createCanvas(windowWidth / 2, windowHeight);
+  var canvas;
+  console.log(windowWidth);
+  if(windowWidth < windowHeight){
+    canvas = createCanvas(windowWidth, windowHeight);
+  } else{
+    canvas = createCanvas(windowWidth/2, windowHeight);
+  }
   canvas.position(0, 0);
   canvas.style('z-index', '1');
   alpha = 0;
@@ -23,7 +29,12 @@ function setup() {
 
 // Set up for canvas responsiveness
 function windowResized(){
-  resizeCanvas(windowWidth / 2, windowHeight);
+//  resizeCanvas(windowWidth/2, windowHeight);
+   if(windowWidth < windowHeight){
+    resizeCanvas(windowWidth, windowHeight);
+  } else{
+    resizeCanvas(windowWidth/2, windowHeight);
+  }
 }
 
 function draw() {
