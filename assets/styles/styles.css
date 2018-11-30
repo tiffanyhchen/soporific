@@ -1,31 +1,31 @@
 @font-face {
     font-family: 'Cogito Bold';
-    src: url('../assets/fonts/CogitoWeb-Bold-TRIAL.woff');
+    src: url('../fonts/CogitoWeb-Bold-TRIAL.woff');
 }
 
 @font-face {
     font-family: 'Cogito Bold Italic';
-    src: url('../assets/fonts/CogitoWeb-BoldItalic-TRIAL.woff');
+    src: url('../fonts/CogitoWeb-BoldItalic-TRIAL.woff');
 }
 
 @font-face {
     font-family: 'Cogito Light Italic';
-    src: url('../assets/fonts/CogitoWeb-LightItalic-TRIAL.woff');
+    src: url('../fonts/CogitoWeb-LightItalic-TRIAL.woff');
 }
 
 @font-face {
     font-family: 'Cogito Light';
-    src: url('../assets/fonts/CogitoWeb-Light-TRIAL.woff');
+    src: url('../fonts/CogitoWeb-Light-TRIAL.woff');
 }
 
 @font-face {
     font-family: 'Cogito';
-    src: url('../assets/fonts/CogitoWeb-Regular-TRIAL.woff');
+    src: url('../fonts/CogitoWeb-Regular-TRIAL.woff');
 }
 
 @font-face {
     font-family: 'Cogito Italic';
-    src: url('../assets/fonts/CogitoWeb-Italic-TRIAL.woff');
+    src: url('../fonts/CogitoWeb-Italic-TRIAL.woff');
 }
 
 html, body {
