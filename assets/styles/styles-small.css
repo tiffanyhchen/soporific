@@ -25,7 +25,6 @@
   width: 70px;
   height: 70px;
   font-size: 2em;
-  background: url(../../imgs/down-arrow.svg) no-repeat 86% 50% rgba(255, 255, 255, 0.5);
 }
 
 .click-icon{
@@ -52,4 +51,8 @@
 #good-nights-rest #page-title{
   width: 70%;
   margin-bottom: 1em;
+}
+
+#sleep-cycles-page .right{
+  width: 100%;
 }
