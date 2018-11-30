@@ -28,15 +28,292 @@
     src: url('../assets/fonts/CogitoWeb-Italic-TRIAL.woff');
 }
 
-html{
-  overflow: hidden;
-  height: 100%;
-  margin: 0;
+html, body {
+    height: 100%;
+    overflow: hidden;
 }
 
-body {
-  height: 100%;
+nav ul{
+  float: right;
+  padding: 10px;
+  z-index:100;
+}
+
+nav ul li{
+  list-style: none;
+  text-align: right;
+  padding: 6px;
+}
+
+nav ul li a{
+  text-decoration: none;
+  text-align: right;
+  color: white;
+  font-family: 'Cogito Light';
+  letter-spacing: 1.25px;
+  font-size: 10px;
+}
+
+.active-page {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  font-family: 'Cogito';
+  border-right: 2px solid #FFF;
+  padding: 10px;
+  z-index: 200;
+}
+
+.page{
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   overflow: auto;
+}
+
+.content{
+  padding: 7%;
+}
+
+.center{
   margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.main-title{
+  font-family: 'Cogito Bold';
+  color: white;
+  font-size: 6em;
+}
+
+.action-message{
+  font-family: 'Cogito Light Italic';
+  color: white;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  bottom: 10%;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%)
+}
+
+.sketch{
   width: 100%;
+  height: 100%;
+}
+
+#page-title{
+  font-family: "Cogito Bold";
+  color: #FFF;
+  font-size: 1.4em;
+  letter-spacing: 0.08em;
+}
+
+#sleep-cycles-page #page-title{
+  color: #F5C67F;
+}
+
+#sleep-cycles-page{
+  background: linear-gradient(-180deg, #6975EE 0%, #212D5C 100%);
+  height: 100%;
+  width: 100%;
+}
+
+.page-subtitle{
+  font-family: "Cogito Bold";
+  color: #FFF;
+  font-size: 1.15em;
+  letter-spacing: 0.05em;
+  margin-top: 2em;
+}
+
+#time-input{
+  display: inline;
+}
+
+#hour, #minute{
+  -webkit-appearance: none; 
+  -moz-appearance: none;
+  appearance: none;  
+  height: 85px;
+  width: 85px;
+  padding: 12px;
+  border: none;
+  color: #FFF;
+  font-size: 2.2em;
+  font-family: "Cogito Light";
+  overflow: hidden;
+  background: url(../imgs/down-arrow.svg) no-repeat 86% 50% rgba(255, 255, 255, 0.5);
+}
+
+#hour:focus, #minute:focus{
+  outline: none;
+}
+
+#hour{
+  margin-right: 10px;
+}
+
+.page-description{
+  color: white;
+  font-family: "Cogito Light";
+  font-size: 0.8em;
+  letter-spacing: 0.05em;
+  line-height: 1.6;
+}
+
+input[type=radio] {
+  position: absolute;
+  visibility: hidden;
+  display: none;
+  height: 100px;
+}
+
+label {
+  display: inline-block;
+  cursor: pointer;
+  font-family: "Cogito Light";
+  width: 100px;
+  height: 30px;
+  color: #fff;
+}
+
+input[type=radio]:checked + label {
+  background: url(../imgs/selected.png) no-repeat 0 0;
+  background-size: 40%;
+}
+
+#sleep-time-input{
+  display: flex;
+  margin-top: 3em;
+  margin-bottom: 1.5em;
+}
+
+#hr-period{
+  margin-left: 3em;
+  margin-top: 1em;
+}
+
+#catch-zzz{
+  background-color: #F9D272;
+  font-family: "Cogito";
+  color: #4A4A4A;
+  font-size: .85em;
+  border: none;
+  height: 36px;
+  width: 150px;
+  border-radius: 6px;
+  margin-bottom: 3em;
+}
+
+#catch-zzz:focus{
+  outline:0;
+}
+
+.recommended-sleep-time{
+  color: white;
+  font-family: "Cogito Light";
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-radius: 6px;
+  padding: 12px;
+  font-size: 1em;
+  text-align: center;
+  margin-right: .7em;
+  letter-spacing: 0.02em;
+}
+
+#times{
+  margin: 2em auto;
+}
+
+.left{
+  width: 50%;
+  float: left;
+}
+
+.right{
+  float: right;
+  width: 45%;
+}
+
+#third{
+  width: 35%;
+}
+
+#symptoms{
+  font-family: "Cogito Light";
+  font-size: 0.8em;
+  color: #fff;
+  width: 80%;
+  margin: 4% 10% 10% 10%;
+}
+
+#symptoms td{
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#symptoms tr th{
+  border-bottom: 1px solid #fff;
+  text-align: left;
+}
+
+#stats{
+  font-family: "Cogito Light";
+  color: #fff;
+  height: 80%;
+  margin: 10% auto;
+}
+
+#stats td{
+  padding-bottom: 0.2em;
+  font-size: .8em;
+}
+
+#stats .large-num{
+  font-size: 4em;
+  text-align: right;
+}
+
+#good-nights-rest{
+  background-color: #8396E9;
+  font-family: "Cogito";
+  color: #fff;
+}
+
+.row{
+  display: flex;
+  width: 100%;
+/*  vertical-align: bottom;*/
+  align-items: baseline;
+}
+
+.three-column{
+  flex: 0 0 30%;
+/*  align-items: center;*/
+  margin: 2em auto;
+}
+
+.click-icon{
+  margin: 0 auto;
+  max-width: 30%;
+  display: block;
+  height: 30%;
+}
+
+.icon-title{
+  text-align: center;
+  font-family: "Cogito Light";
+  font-size: 1em;
+  margin: 1em auto;
 }

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>zzz</title>
+    <script src="../libraries/p5.min.js"></script>
+    <script src="../libraries/p5.dom.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/sleep-cycle.js"></script>
+    <script src="../scripts/sleep-cycle-calculator.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+  </head>
+  <body scroll="no">
+      <div class="page" id="sleep-cycles-page">
+        <nav>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="what-sleep-does.html">WHAT SLEEP DOES</a></li>
+            <li><a href="/sleep-cycles.html">SLEEP CALCULATOR</a></li>
+            <li><a href="good-nights-rest.html">GETTING QUALITY REST</a></li>
+          </ul>
+        </nav>
+        <div class="content">
+          <div id="page-title">UNDERSTANDING YOUR SLEEP</div>
+          <div class="left">
+            <div class="sketch" id="sleep-cycle-graph"></div>
+          </div>
+          <div class="right">
+            <div class="page-subtitle">
+              sleep calculator
+            </div>
+            <p class="page-description">
+              Input when you want to wake up to find out when you should sleep. You should be falling asleep at these times, not going to bed at these times. You are recommended to sleep 4-5 cycles a night, which is about 7-9 hours.
+            </p>
+            <div id="sleep-time-input">
+              <div id="time-input">
+                <select id="hour">
+                  <option>01</option>
+                  <option>02</option>
+                  <option>03</option>
+                  <option>04</option>
+                  <option>05</option>
+                  <option>06</option>
+                  <option>07</option>
+                  <option>08</option>
+                  <option selected>09</option>
+                  <option>10</option>
+                  <option>11</option>
+                  <option>12</option>
+                </select>
+                <select id="minute">
+                  <option selected>00</option>
+                  <option>05</option>
+                  <option>10</option>
+                  <option>15</option>
+                  <option>20</option>
+                  <option>25</option>
+                  <option>30</option>
+                  <option>35</option>
+                  <option>40</option>
+                  <option>45</option>
+                  <option>50</option>
+                  <option>55</option>
+                </select>
+              </div>
+              <div id="hr-period">
+                <div class="radio-background" id="am-background">
+                  <input type="radio" name="12-hr-period" value="AM" id="am" checked><label for="am">am</label>
+                </div>
+                <div class="radio-background" id="pm-background">
+                  <input type="radio" name="12-hr-period" value="PM" id="pm"><label for="pm">pm</label>
+                </div>
+              </div>
+            </div>
+            <button id="catch-zzz">
+              catch some zzz's
+            </button>
+            <p class="page-description">
+              try sleeping at ... 
+            </p>
+            <div id="times">
+            </div>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>
