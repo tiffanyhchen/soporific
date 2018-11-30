@@ -289,6 +289,12 @@ input[type=radio]:checked + label {
   background-color: #8396E9;
   font-family: "Cogito";
   color: #fff;
+  overflow: hidden;
+}
+
+.three-column a{
+  text-decoration: none;
+  color: #fff;
 }
 
 .row{
@@ -300,7 +306,6 @@ input[type=radio]:checked + label {
 
 .three-column{
   flex: 0 0 30%;
-/*  align-items: center;*/
   margin: 2em auto;
 }
 
@@ -308,7 +313,7 @@ input[type=radio]:checked + label {
   margin: 0 auto;
   max-width: 30%;
   display: block;
-  height: 30%;
+  max-height: 30%;
 }
 
 .icon-title{
@@ -316,4 +321,65 @@ input[type=radio]:checked + label {
   font-family: "Cogito Light";
   font-size: 1em;
   margin: 1em auto;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 100; /* Sit on top */
+  padding-top: 5%; 
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fff;
+  width: 30%;
+  height: 60%;
+  margin: auto;
+  padding: 2em;
+  border-radius: 10px;
+}
+
+.modal-text{
+  padding: 10%;
+}
+
+#modal-title, #modal-paragraph{
+  color: #8396E9;
+}
+
+#modal-title{
+  font-family: "Cogito Bold";
+  margin-bottom: 1em;
+  font-size: 1.5em;
+}
+
+#modal-paragraph{
+  color: #545962;
+  font-size: 1em;
+  line-height: 1.6em;
+}
+
+
+/* The Close Button */
+.close {
+  color: #8396E9;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  z-index: 200;
+  top: -5%;
+  text-decoration: none;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  text-decoration: none;
 }

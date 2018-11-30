@@ -7,8 +7,8 @@
     <script src="../libraries/p5.dom.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
       crossorigin="anonymous"></script>
-    <script src="../scripts/sally.js"></script>
     <script src="../scripts/main.js"></script>
+    <script src="../scripts/modal.js"></script>
     <link rel="stylesheet" type="text/css" href="../styles/styles.css">
   </head>
   <body scroll="no">
@@ -18,37 +18,60 @@
             <li><a href="index.html">HOME</a></li>
             <li><a href="/what-sleep-does.html">WHAT SLEEP DOES</a></li>
             <li><a href="sleep-cycles.html">SLEEP CYCLES</a></li>
-            <li><a href="good-nights-rest.html">GETTING QUALITY REST</a></li>
+            <li><a href="/good-nights-rest.html">GETTING QUALITY REST</a></li>
           </ul>
         </nav>
-        <div class="content">
+        <!-- Modal -->
+        <div id="main-modal" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <a href="javascript:closeModal()" class="close">&times;</a>
+            <div class="modal-text">
+              <div id="modal-title"></div>
+              <p id="modal-paragraph"></p>
+            </div>
+          </div>
+        </div>
+        <div class="content" id="main-content">
           <div id="page-title">TIPS FOR A GOOD NIGHT'S REST</div>
           <div class="row">
             <div class="three-column">
-              <img src="imgs/clock.svg" class="click-icon"/>
-              <div class="icon-title">have a regular schedule</div>
+              <a href="javascript:showModal('clock')">
+                <img src="imgs/clock.svg" class="click-icon"/>
+                <div class="icon-title">have a regular schedule</div>
+              </a>
             </div> 
             <div class="three-column">
-              <img src="imgs/phone.svg" class="click-icon"/>
-              <div class="icon-title">avoid devices</div>
+              <a href="javascript:showModal('phone')">
+                <img src="imgs/phone.svg" class="click-icon"/>
+                <div class="icon-title">avoid devices</div>
+              </a>
             </div>
             <div class="three-column">
-              <img src="imgs/exercise.svg" class="click-icon"/>
-              <div class="icon-title">exercise</div>
+              <a href="javascript:showModal('exercise')">
+                <img src="imgs/exercise.svg" class="click-icon"/>
+                <div class="icon-title">exercise</div>
+              </a>
             </div>
           </div>
           <div class="row">
             <div class="three-column">
-              <img src="imgs/temperature.svg" class="click-icon"/>
-              <div class="icon-title">set a cool sleeping environment</div>
+              <a href="javascript:showModal('temperature')">
+                <img src="imgs/temperature.svg" class="click-icon"/>
+                <div class="icon-title">set a cool sleeping environment</div>
+              </a>
             </div> 
             <div class="three-column">
-              <img src="imgs/bed.svg" class="click-icon"/>
-              <div class="icon-title">have a comfortable bed</div>
+              <a href="javascript:showModal('bed')">
+                <img src="imgs/bed.svg" class="click-icon"/>
+                <div class="icon-title">have a comfortable bed</div>
+              </a>
             </div>
             <div class="three-column">
-              <img src="imgs/yawn.svg" class="click-icon"/>
-              <div class="icon-title">relax and unwind</div>
+              <a href="javascript:showModal('yawn')">
+                <img src="imgs/yawn.svg" class="click-icon"/>
+                <div class="icon-title">relax and unwind</div>
+              </a>
             </div>
           </div>
         </div>
