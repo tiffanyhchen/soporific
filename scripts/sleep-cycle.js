@@ -4,11 +4,11 @@ var font;
 var label1, label2, label3, label4;
 
 function preload(){ 
-  graph = loadImage("imgs/sleep-cycle-graph.png"); 
-  label1 = loadImage("imgs/awake-stage.png");
-  label2 = loadImage("imgs/lightsleep-stage.png");
-  label3 = loadImage("imgs/deepsleep-stage.png");
-  label4 = loadImage("imgs/waking-stage.png");
+  graph = loadImage("assets/imgs/sleep-cycle-graph.png"); 
+  label1 = loadImage("assets/imgs/awake-stage.png");
+  label2 = loadImage("assets/imgs/lightsleep-stage.png");
+  label3 = loadImage("assets/imgs/deepsleep-stage.png");
+  label4 = loadImage("assets/imgs/waking-stage.png");
   font = loadFont('assets/fonts/CogitoWeb-Bold-TRIAL.woff');
 } 
 

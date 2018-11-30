@@ -7,7 +7,7 @@ var stars = [];
 var moon;
 
 function preload(){ 
-  moon = loadImage("imgs/moon.png"); 
+  moon = loadImage("../assets/imgs/moon.png"); 
 } 
 
 function setup() {

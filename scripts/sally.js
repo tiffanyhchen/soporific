@@ -4,10 +4,9 @@ var windowIllustrationWidth;
 var twinkle;
 
 function preload(){ 
-  sally = loadImage("imgs/sally.png"); 
-  originalWindow = loadImage("imgs/original-window.png");
-  twinkleWindow = loadImage("imgs/twinkle-window.png");
-  print("preload done");
+  sally = loadImage("assets/imgs/sally.png"); 
+  originalWindow = loadImage("assets/imgs/original-window.png");
+  twinkleWindow = loadImage("assets/imgs/twinkle-window.png");
 } 
 
 function setup() {
