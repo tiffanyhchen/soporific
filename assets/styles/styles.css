@@ -152,7 +152,7 @@ nav ul li a{
   font-size: 2.2em;
   font-family: "Cogito Light";
   overflow: hidden;
-  background: url(../imgs/down-arrow.svg) no-repeat 86% 50% rgba(255, 255, 255, 0.5);
+  background: url(imgs/down-arrow.svg) no-repeat 86% 50% rgba(255, 255, 255, 0.5);
 }
 
 #hour:focus, #minute:focus{
@@ -188,7 +188,7 @@ label {
 }
 
 input[type=radio]:checked + label {
-  background: url(../imgs/selected.png) no-repeat 0 0;
+  background: url(imgs/selected.png) no-repeat 0 0;
   background-size: 40%;
 }
 

@@ -1,5 +1,4 @@
 $(document).ready(function(){
-  $activePage = $("nav li a[href*='" + location.pathname + "']");
-  console.log($activePage);
-  $activePage.addClass("active-page");
+  $('nav li a[href="/' + location.pathname.split("/")[1] + '"]').addClass('active-page');
+
 });
