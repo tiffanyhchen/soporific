@@ -38,7 +38,6 @@ function windowResized(){
 }
 
 function draw() {
-//  imageMode(CENTER);
   fadeInGraph();
   
   var graphX = windowWidth / 18;
@@ -52,16 +51,11 @@ function draw() {
   textAlign(LEFT);
   fill(255);
   textSize(22);
-  text("the anatomy of a sleep cycle", graphX, (height/2 - graph.height/6) + (graph.height/1.8));
-
-//  noStroke();
-//  fill(255, 200);
-//  var graphWidth = graph.width/2;
-//  var graphHeight = graph.height/2;
-//  ellipse(windowWidth/18 + (graphWidth * 0.135), (height/2 - graph.height/6) - (0.005 * graphHeight), height/60, height/60);
-  
+  /* title of graph */
+  text("the anatomy of a sleep cycle", graphX, (height/2 - graph.height/6) + (graph.height/1.8)); 
 }
 
+/* ease in graph function */
 function fadeInGraph(){
   clear();
   tint(255, alpha);

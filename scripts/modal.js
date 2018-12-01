@@ -3,6 +3,8 @@ var modal = document.getElementById('main-modal');
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
+
+// content for the modals
 var content = [
   {
     "icon": "clock",
@@ -36,6 +38,7 @@ var content = [
   }
 ]
 
+//show modal
 function showModal(identifier){
   var description = "";
   var title = "";
@@ -48,14 +51,14 @@ function showModal(identifier){
     }
   }
   
-  console.log(description);
-  console.log(title);
+  // fills modal content
   document.getElementById('modal-paragraph').innerHTML = description;
   document.getElementById('modal-title').innerHTML = title;
   modal.style.display = "block";
   document.getElementById("main-content").style.filter="blur(10px)";
 }
 
+// Close modal
 function closeModal(){
   var modal = document.getElementById('main-modal');
   modal.style.display = "none";

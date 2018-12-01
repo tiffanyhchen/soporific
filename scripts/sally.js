@@ -38,5 +38,4 @@ function draw() {
     twinkle = 1;
   }
   image(sally, windowWidth / 18, windowHeight - (sallyHeight * 5 / 4), sallyWidth, sallyHeight);
-  
 }

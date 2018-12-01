@@ -18,6 +18,7 @@ function setup() {
   
   darkBlue = color(29, 53, 85);
   lightBlue = color(114, 151, 255);
+  
   setGradient(0, 0, width, height, darkBlue, lightBlue);
   setupStars();
   image(moon, windowWidth/4, windowHeight / 3, windowWidth / 5, windowWidth / 5);
@@ -34,6 +35,7 @@ function draw() {
   drawStars();
 }
 
+/* setup star objects */
 function setupStars(){
   for (var i = 0; i < 70; i++) {
     stars.push(new Star());
@@ -44,6 +46,7 @@ function setupStars(){
   }
 }
 
+/* draw stars for each frame */
 function drawStars(){
   for (var i = 0; i < 70; i++) {
     stars[i].draw();
